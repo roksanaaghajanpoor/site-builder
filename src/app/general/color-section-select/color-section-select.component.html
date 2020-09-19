@@ -1,0 +1,10 @@
+<div class="form-group">
+ <select class="form-control text-dark" (change)="getColor($event.target.value)">
+  <option class="text-dark">Select...</option>
+  <option class="text-dark" [value]="colorType.FULL_PAGE">Full page background</option>
+  <option class="text-dark" [value]="colorType.CARD_BG">Card background</option>
+  <option class="text-dark" [value]="colorType.BTN_BG">Buttons background</option>
+  <option class="text-dark" [value]="colorType.TEXT_COLOR">Text Color</option>
+  <option class="text-dark" [value]="colorType.BTN_TEXT_COLOR">Button Text Color</option>
+ </select>
+</div>

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item" dropdown [insideClick]="true">
+      <a id="colorDrop" dropdownToggle class="nav-link dropdown-toggle" aria-controls="colorDrop">
+        Color
+      </a>
+      <div id="colorDrop" *dropdownMenu class="dropdown-menu dropdown-w" role="menu" aria-labelledby="button-basic">
+        <div class="container">
+          <app-color-section-select class="w-100" (sectionEmitter)="colorSectionSelect($event)">
+          </app-color-section-select>
+
+          <input class="form-control" [value]="color" [style.background]="color" [(colorPicker)]="color"
+            (colorPickerChange)="colorChange($event)" />
+        </div>
+      </div>
+    </li>
+
+    <li class="nav-item" dropdown [insideClick]="true">
+      <a id="fontDrop" dropdownToggle class="nav-link dropdown-toggle" aria-controls="fontDrop">
+        Font
+      </a>
+      <div id="fontDrop" *dropdownMenu class="dropdown-menu dropdown-w" role="menu" aria-labelledby="button-basic">
+        <app-font-select (fontEmitter)="changeFont($event)"></app-font-select>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item" *ngFor="let item of templateConfig">
+      <a class="nav-link" (click)="setTemplate(item)">{{item.templateName}}</a>
+    </li>
+  </ul>
+</nav>

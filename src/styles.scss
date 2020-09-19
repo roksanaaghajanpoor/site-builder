@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import "master";
+
+body {
+ background-color: $body-bg !important;
+ font-family: $body-font !important;
+}
+
+.dropdown-w {
+ width: 400px;
+}
+
+.card {
+ background-color: $card-bg !important;
+}
+
+.navbar {
+ background-color: $navbar-bg !important;
+}
+
+footer {
+ background-color: $footer-bg !important;
+}
+
+:not(button) {
+ color: $text-color;
+}
+
+.btn {
+ background-color: $bottom-bg !important;
+ color: $button-text-color !important;
+}
+
+.cursor-pointer {
+ cursor: pointer;
+}

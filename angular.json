@@ -28,9 +28,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/angular2-draggable/css/resizable.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                ".",
+                "./src/assets/scss/"
+              ]
+            }
           },
           "configurations": {
             "production": {
@@ -92,9 +105,17 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                ".",
+                "./src/assets/scss/"
+              ]
+            }
           }
         },
         "lint": {
@@ -123,6 +144,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "site-builder"
+    }
+  },
+  "defaultProject": "site-builder",
+  "cli": {
+    "analytics": "42df364a-cdc4-4ba8-a818-13e41f79d345"
+  }
 }

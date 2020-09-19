@@ -1,0 +1,21 @@
+<div class="card">
+ <div class="modal-header">
+  <h4 class="modal-title pull-left"> {{productItem.name}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+   <span aria-hidden="true">&times;</span>
+  </button>
+ </div>
+ <div [style.backgroundImage]="'url(' + '../../../assets/image/insta.jpeg' + ')'" class="product-img"></div>
+
+ <div class="card-body">
+  {{productItem.description}}
+ </div>
+
+ <div class="card-footer">
+  <button class="btn rounded btn-light fa fa-heart-o m-1">
+  </button>
+
+  <button class="btn rounded btn-light fa fa-comment m-1">
+  </button>
+ </div>
+</div>

@@ -1,0 +1,21 @@
+$body-font: var(--body-font);
+
+@font-face {
+ font-family: "cuntrySide";
+ src: url("src/assets/font/countryside-font/Countryside-YdKj.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: "love";
+ src: url("src/assets/font/plastic-love-font/PlasticLoveRegular-MVO9v.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: "roboto";
+ src: url("src/assets/font/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: "cinderella";
+ src: url("src/assets/font/CinderelaPersonalUseRegular-RDvM.ttf") format("truetype");
+}

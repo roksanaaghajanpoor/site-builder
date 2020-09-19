@@ -1,0 +1,12 @@
+<div class="container-fluid">
+ <div class="row">
+  <div [class]="productClass" appChangeElementClass *ngFor="let item of productsList">
+   <div class="card mb-2">
+    <div [style.backgroundImage]="'url(' + '../../../assets/image/insta.jpeg' + ')'" class="product-img"></div>
+    <div class="card-body">
+     <h4 class="card-title text-center">{{item.name}}</h4>
+     <button (click)="productDetail(item)" class="btn btn-sm border border-secondary rounded btn-light">Detail</button>
+    </div>
+   </div>
+  </div>
+ </div>
